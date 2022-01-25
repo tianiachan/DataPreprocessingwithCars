@@ -6,3 +6,7 @@ library(arules)
 creditapproval<-read.csv(file="CreditApproval.csv", header=TRUE, sep=",", as.is = FALSE)
 # preview data
 head(creditapproval,10)
+#display dataframe structure
+str(creditapproval)
+#show summary of data
+summary(creditapproval)
