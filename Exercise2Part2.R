@@ -10,3 +10,10 @@ head(creditapproval,10)
 str(creditapproval)
 #show summary of data
 summary(creditapproval)
+#discretization methods
+summary(creditapproval$Age)
+creditapproval$Age <-discretize(creditapproval$Age, method = "interval", breaks = 5)
+summary(creditapproval$Age)
+summary(creditapproval$YearsEmployed)
+creditapproval$YearsEmployed <- discretize(creditapproval$YearsEmployed, method = "cluster", breaks = 5)
+summary(creditapproval$YearsEmployed) # need to change this
